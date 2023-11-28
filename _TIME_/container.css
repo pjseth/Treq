@@ -1,0 +1,38 @@
+html, body {
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+}
+
+#mobile-restrict-container {
+	width: 393px;
+	height: 852px;
+	background-color: white;
+	overflow: auto;
+	position: relative;
+}
+
+#status-bar {
+	position: sticky;
+	top: 0px;
+	height: 47px;
+	background-color: darkgrey;
+	text-align: center;
+}
+
+#top-bar {
+	background-color: yellow;
+}
+
+#bottom-bar {
+	background-color: yellow;
+	position: sticky;
+	bottom: 0px;
+	height: 79px;
+}
+
+.test {
+/*	font-size: 240px;*/
+}
