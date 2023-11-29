@@ -2,50 +2,56 @@
 <html>
     <head>
         <title>Home Page</title>
-        <link rel="stylesheet" href="create.css">
+        <link rel="stylesheet" href="../assets/treq-mobile.css">
+        <link rel="stylesheet" href="home.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <!-- <script src="tmp.js"></script> -->
     </head>
     <body>
         <div id="mobile-restrict-container">
-            <img id="status-bar" src="status-bar.png" alt="iPhone Status Bar with a Notch">
+            <img id="status-bar" src="../assets/status-bar.png" alt="iPhone Status Bar with a Notch">
             <div id="top-bar">
-                <div id="top-bar-left" class="top-bar-element"></div> 
-                <div id="top-bar-mid" class="top-bar-element">
-                    Create Trip
+                <div id="top-bar-left" class="top-bar-element">
+                    <img class="header-icon" src="../assets/treq-logo.png" alt="Treq Logo">
                 </div> 
+                <div id="top-bar-mid" class="top-bar-element"></div> 
                 <div id="top-bar-right" class="top-bar-element">
-                    <button id="next-button" class="pill-button">
-                        Next
-                    </button>
+                    <img class="header-icon" src="../assets/notification-bell.png" alt="Notification Icon">
                 </div> 
             </div>
-            <div id="content-center-control">
-                <div id="create-grid">
-                    <span class="title-grid-element">Trip Name:</span>
-                    <input type="text" id="new-trip-name" class="form-grid-element" name="trip-name" placeholder="Winter Break 2024">
-
-                    <span class="title-grid-element">Location:</span>
-                    <input type="text" id="new-trip-name" class="form-grid-element" name="location" placeholder="Thailand">
-
-                    <span class="title-grid-element">Departure:</span>
-                    <input type="date" id="new-trip-dep" class="form-grid-element" name="dep">
-
-                    <span class="title-grid-element">Return:</span>
-                    <input type="date" id="new-trip-ret" class="form-grid-element" name="ret">
-
-                    <div id="invite-button-container">
-                        <button id="invite-button" class="pill-button">
-                            Invite friends
-                        </button>
-                    </div>
+            <div class="content">
+                <div id="cover">
+                    <img class="trip-cover-image" src="../assets/trip1-cover.png" alt="Columbia Campus">
+                </div>
+                <div id="subtitle" class="content-limit-center">
+                    Current Trip!
+                </div>
+                <div id="title" class="content-limit-center">
+                    A trip to Columbia University
+                </div>
+                <div id="tripmates" class="content-limit-center">
+                    <!-- logo text add-cta -->
+                </div>
+                <div id="day-select" class="content-limit-center">
+                    <!-- dropdown -->
+                </div>
+                <div id="actions" class="content-limit-center">
+                    <button class="homepage-cta pill-button">
+                        Rank places
+                    </button>
+                    <button class="homepage-cta pill-button">
+                        Add new places
+                    </button>
+                </div>
+                <div id="schedule" class="content-limit-center">
+                    incoming
                 </div>
             </div>
             <div id="bottom-bar">
-                <img class="bottom-bar-icon" src="icon-home.png" alt="grey vector of a house">
-                <img class="bottom-bar-icon" src="icon-add-active.png" alt="blue vector of a plus">
-                <img class="bottom-bar-icon" src="icon-profile.png" alt="grey vector of a person">
+                <img class="bottom-bar-icon" src="../assets/icon-home.png" alt="grey vector of a house">
+                <img class="bottom-bar-icon" src="../assets/icon-add-active.png" alt="blue vector of a plus">
+                <img class="bottom-bar-icon" src="../assets/icon-profile.png" alt="grey vector of a person">
             </div>
         </div>
     </body>
