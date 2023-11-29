@@ -44,10 +44,6 @@ button, input {
 	align-items: center;
 }
 
-#top-bar-mid {
-	font-weight: bold;
-}
-
 .pill-button {
   display: inline-block;
   padding: 5px 20px;
@@ -58,11 +54,6 @@ button, input {
   text-align: center;
 }
 
-#next-button {
-	font-size: 16px;
-	font-weight: bold;
-}
-
 #content-center-control {
 	min-height: 650px; /* roughly 852 - 33 - 80 - 82 - padding */
 	display: flex;
@@ -70,37 +61,6 @@ button, input {
 	flex: 1;
   justify-content: center; /* horizontally center the inner content */
   align-items: center; /* vertically center the inner content */
-}
-
-#create-grid {
-	margin: auto;
-	width: 80%;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px 10px;
-	grid-auto-rows: auto;
-}
-
-.title-grid-element {
-	grid-column: 1;
-}
-
-.form-grid-element {
-	grid-column: 2 / 4;
-	border: none;
-  border-bottom: 1px solid black;
-}
-
-#invite-button-container {
-	grid-column: 1 / 4;
-	text-align: center; /* center content horizontally in a grid item */
-}
-
-#invite-button {
-	width: 171px;
-	height: 42px;
-	font-size: 18px;
-	font-weight: bold;
 }
 
 #bottom-bar {
@@ -118,8 +78,4 @@ button, input {
 
 .bottom-bar-icon {
 	width: 30px;
-}
-
-.test {
-/*	font-size: 240px;*/
 }

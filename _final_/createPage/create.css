@@ -1,0 +1,39 @@
+#top-bar-mid {
+	font-weight: bold;
+}
+
+#next-button {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#create-grid {
+	margin: auto;
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px 10px;
+	grid-auto-rows: auto;
+}
+
+.title-grid-element {
+	grid-column: 1;
+}
+
+.form-grid-element {
+	grid-column: 2 / 4;
+	border: none;
+  border-bottom: 1px solid black;
+}
+
+#invite-button-container {
+	grid-column: 1 / 4;
+	text-align: center; /* center content horizontally in a grid item */
+}
+
+#invite-button {
+	width: 171px;
+	height: 42px;
+	font-size: 18px;
+	font-weight: bold;
+}

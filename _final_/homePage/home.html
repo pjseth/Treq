@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="create.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- <script src="tmp.js"></script> -->
+    </head>
+    <body>
+        <div id="mobile-restrict-container">
+            <img id="status-bar" src="status-bar.png" alt="iPhone Status Bar with a Notch">
+            <div id="top-bar">
+                <div id="top-bar-left" class="top-bar-element"></div> 
+                <div id="top-bar-mid" class="top-bar-element">
+                    Create Trip
+                </div> 
+                <div id="top-bar-right" class="top-bar-element">
+                    <button id="next-button" class="pill-button">
+                        Next
+                    </button>
+                </div> 
+            </div>
+            <div id="content-center-control">
+                <div id="create-grid">
+                    <span class="title-grid-element">Trip Name:</span>
+                    <input type="text" id="new-trip-name" class="form-grid-element" name="trip-name" placeholder="Winter Break 2024">
+
+                    <span class="title-grid-element">Location:</span>
+                    <input type="text" id="new-trip-name" class="form-grid-element" name="location" placeholder="Thailand">
+
+                    <span class="title-grid-element">Departure:</span>
+                    <input type="date" id="new-trip-dep" class="form-grid-element" name="dep">
+
+                    <span class="title-grid-element">Return:</span>
+                    <input type="date" id="new-trip-ret" class="form-grid-element" name="ret">
+
+                    <div id="invite-button-container">
+                        <button id="invite-button" class="pill-button">
+                            Invite friends
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-bar">
+                <img class="bottom-bar-icon" src="icon-home.png" alt="grey vector of a house">
+                <img class="bottom-bar-icon" src="icon-add-active.png" alt="blue vector of a plus">
+                <img class="bottom-bar-icon" src="icon-profile.png" alt="grey vector of a person">
+            </div>
+        </div>
+    </body>
+</html>
