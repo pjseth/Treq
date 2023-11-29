@@ -8,6 +8,11 @@ html, body {
 	font-size: 20px;
 }
 
+button, input {
+/*	font-size: inherit;*/
+  font-family: inherit;
+}
+
 #mobile-restrict-container {
 	width: 393px;
 	height: 852px;
@@ -28,7 +33,7 @@ html, body {
 #top-bar {
 	background-color: white;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
 	justify-items: center;
 	text-align: center;
 	align-items: center;
@@ -50,8 +55,6 @@ html, body {
   border-radius: 50px;
   background-color: #639FAB;
   color: white;
-  font-size: inherit;
-  font-family: inherit;
   text-align: center;
 }
 
@@ -60,8 +63,44 @@ html, body {
 	font-weight: bold;
 }
 
-#content {
-	min-height: 650px; /* roughly 852 - 33 - 80 - 82 */
+#content-center-control {
+	min-height: 650px; /* roughly 852 - 33 - 80 - 82 - padding */
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+  justify-content: center; /* horizontally center the inner content */
+  align-items: center; /* vertically center the inner content */
+}
+
+#create-grid {
+	margin: auto;
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px 10px;
+	grid-auto-rows: auto;
+}
+
+.title-grid-element {
+	grid-column: 1;
+}
+
+.form-grid-element {
+	grid-column: 2 / 4;
+	border: none;
+  border-bottom: 1px solid black;
+}
+
+#invite-button-container {
+	grid-column: 1 / 4;
+	text-align: center; /* center content horizontally in a grid item */
+}
+
+#invite-button {
+	width: 171px;
+	height: 42px;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 #bottom-bar {

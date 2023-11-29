@@ -11,18 +11,36 @@
         <div id="mobile-restrict-container">
             <img id="status-bar" src="status-bar.png" alt="iPhone Status Bar with a Notch">
             <div id="top-bar">
-                <div class="top-bar-element" id="top-bar-left"></div> 
-                <div class="top-bar-element" id="top-bar-mid">
+                <div id="top-bar-left" class="top-bar-element"></div> 
+                <div id="top-bar-mid" class="top-bar-element">
                     Create Trip
                 </div> 
-                <div class="top-bar-element" id="top-bar-right">
-                    <button class="pill-button" id="next-button">
+                <div id="top-bar-right" class="top-bar-element">
+                    <button id="next-button" class="pill-button">
                         Next
                     </button>
                 </div> 
             </div>
-            <div id="content">
-                
+            <div id="content-center-control">
+                <div id="create-grid">
+                    <span class="title-grid-element">Trip Name:</span>
+                    <input type="text" id="new-trip-name" class="form-grid-element" name="trip-name" placeholder="Winter Break 2024">
+
+                    <span class="title-grid-element">Location:</span>
+                    <input type="text" id="new-trip-name" class="form-grid-element" name="location" placeholder="Thailand">
+
+                    <span class="title-grid-element">Departure:</span>
+                    <input type="date" id="new-trip-dep" class="form-grid-element" name="dep">
+
+                    <span class="title-grid-element">Return:</span>
+                    <input type="date" id="new-trip-ret" class="form-grid-element" name="ret">
+
+                    <div id="invite-button-container">
+                        <button id="invite-button" class="pill-button">
+                            Invite friends
+                        </button>
+                    </div>
+                </div>
             </div>
             <div id="bottom-bar">
                 <img class="bottom-bar-icon" src="icon-home.png" alt="grey vector of a house">
