@@ -1,0 +1,87 @@
+
+body{
+    background: #1c5d99;
+}
+
+#top-bar-mid {
+	font-weight: bold;
+    font-size: 22px;
+}
+
+#next-button {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#create-grid {
+	margin: auto;
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px 10px;
+	grid-auto-rows: auto;
+}
+
+.title-grid-element {
+	grid-column: 1;
+}
+
+.form-grid-element {
+	grid-column: 2 / 4;
+	border: none;
+  border-bottom: 1px solid black;
+}
+
+.logo-container{
+    width: 388px;
+    height: 300px;
+    margin-top: 50px;
+    /* border: 2px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-container{
+    width: 388px;
+    height: 150px;
+    margin-top: 100px;
+    /* border: 2px solid #000; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#login-button {
+    padding: 10px 47px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+#signup-button{
+    padding: 10px 40px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+#login-button {
+    background-color: white;
+    color: #1c5d99;
+}
+
+#signup-button {
+    background-color: #1c5d99;
+    color: white;
+}
+
+#login-button:hover, #signup-button:hover {
+    opacity: 0.8;
+}
