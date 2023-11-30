@@ -8,9 +8,36 @@ html, body {
 	font-size: 20px;
 }
 
-button, input {
+button, input, select {
 /*	font-size: inherit;*/
   font-family: inherit;
+}
+
+.pill-button {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: auto;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #639FAB;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.pill-button-icon {
+	height: 16px;
+	margin-right: 5px;
+}
+
+.pill-dropdown {
+	display: inline-block;
+  padding: 5px 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+/*  text-align: center;*/
 }
 
 #mobile-restrict-container {
@@ -42,16 +69,6 @@ button, input {
 
 .top-bar-element {
 	align-items: center;
-}
-
-.pill-button {
-  display: inline-block;
-  padding: 5px 20px;
-  border: none;
-  border-radius: 50px;
-  background-color: #639FAB;
-  color: white;
-  text-align: center;
 }
 
 .content {

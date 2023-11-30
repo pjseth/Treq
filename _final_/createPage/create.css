@@ -28,7 +28,8 @@
 
 #invite-button-container {
 	grid-column: 1 / 4;
-	text-align: center; /* center content horizontally in a grid item */
+	justify-content: center;
+  align-items: center;
 }
 
 #invite-button {
