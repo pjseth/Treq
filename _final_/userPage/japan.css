@@ -6,15 +6,11 @@
 	width: 100%;
 }
 
-.info-container{
-    margin-left: 30px;
-    margin-top: 10px;
-    width: 330px; /* Adjust the width as needed */
-    height: 100px; /* Set the same height as the width to make it a square */
-    /* border: 2px solid #000; */
-    font-size: 20px
+#info-container{
+    padding: 10px 0px;
 }
-.account{
+
+#trip-range{
     font-size: 13px; 
     color: #717171;
 }
@@ -39,11 +35,11 @@ hr {
     margin: 10px 0;
 }
 
-.itinerary-container{
-    margin-left: 30px;
-    margin-top: 10px;
-    width: 330px; /* Adjust the width as needed */
-    height: 400px; /* Set the same height as the width to make it a square */
-    /* border: 2px solid #000; */
-    font-size: 20px
+#itinerary-container{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#day-select {
+    padding: 5px;
 }

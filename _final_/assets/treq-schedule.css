@@ -1,0 +1,38 @@
+#schedule {
+	display: grid;
+	grid-template-rows: auto;
+}
+
+.inactive-event {
+	color: grey;
+	display: grid;
+	grid-template-columns: 70px auto;
+	align-items: center;
+	margin: 5px 0px;
+}
+
+.event-time {
+	font-size: 14px;
+}
+
+.event-name {
+	font-size: 16px;
+}
+
+.active-event {
+	display: grid;
+	grid-template-columns: 100px auto;
+	grid-template-rows: auto;
+	gap: 5px;
+	font-weight: bold;
+	align-items: center;
+	margin: 10px 0px;
+}
+
+.active-event-bottom-line {
+	grid-column: 1 / 3;
+}
+
+.event-image {
+	width: 80px;
+}
