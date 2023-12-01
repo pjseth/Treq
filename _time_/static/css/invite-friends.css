@@ -1,0 +1,45 @@
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 5px 20px;
+    margin: 10px 0px;
+    border: 1px solid grey;
+    border-radius: 40px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.friend-container{
+    min-height: 80px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.info-container{
+    flex-direction: column;
+    width: 180px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 10px;
+    display: flex;
+}
+
+.name{
+   font-size: 16px; 
+}
+
+.account{
+    font-size: 13px; 
+    color: #717171;
+}
+
+hr {
+    border: 0.5px solid #ddd; /* Adjusted border color and thickness */
+    width: 80%; /* Adjusted width to 80% from the center */
+    margin: 0 auto; /* Center the hr element */
+}
