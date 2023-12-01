@@ -1,46 +1,58 @@
 .header-icon {
-	height: 22px;
+    height: 22px;
 }
 
 .trip-cover-image {
-	width: 100%;
+    width: 100%;
 }
 
-.info-container{
+.info-container {
     margin-left: 30px;
     margin-top: 80px;
-    width: 330px; /* Adjust the width as needed */
-    height: 300px; /* Set the same height as the width to make it a square */
-    /* border: 2px solid #000; */
+    width: 330px;
+    height: 300px;
     font-size: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+
 .input-container {
     margin: 20px;
 }
 
 input {
-    padding: 14px; /* Adjusted padding for larger size */
-    margin: 10px; /* Adjusted margin for better spacing */
+    padding: 14px;
+    margin: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 250px; /* Adjusted width for larger size */
+    width: 250px;
     font-size: 16px;
 }
-#login-button {
+
+#signup-button {
     padding: 10px 47px;
     margin: 10px;
     font-size: 16px;
     cursor: pointer;
-    border: none;
     border-radius: 20px;
+    background-color: #1c5d99;
+    color: white;
     border: 2px solid white;
 }
 
-#login-button {
-    background-color: #1c5d99;
-    color: white;
+/* Styles for back button */
+.back-button {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #1c5d99;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.back-button img {
+    height: 22px;
 }

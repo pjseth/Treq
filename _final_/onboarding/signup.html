@@ -6,14 +6,16 @@
         <link rel="stylesheet" href="signup.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <!-- <script src="tmp.js"></script> -->
     </head>
     <body>
         <div id="mobile-restrict-container">
             <img id="status-bar" src="../assets/status-bar.png" alt="iPhone Status Bar with a Notch">
             <div id="top-bar">
+                <!-- Back button link -->
                 <div id="top-bar-left" class="top-bar-element">
-                    <img src="../assets/arrow.png">
+                    <a href="onboarding.html" class="back-button">
+                        <img src="../assets/arrow.png" alt="Back">
+                    </a>
                 </div> 
                 <div id="top-bar-mid" class="top-bar-element">
                     Sign Up
@@ -32,10 +34,9 @@
                         <input type="password" placeholder="Password">
                     </div>
                     <div id="button-container" class="button-container">
-                        <button id="login-button">Sign Up</button>
+                        <button id="signup-button">Sign Up</button>
                     </div>
                 </div>
-                
             </div>
         </div>
     </body>
