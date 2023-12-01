@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Japan Trip Details</title>
-        <link rel="stylesheet" href="../assets/treq-mobile.css">
-        <link rel="stylesheet" href="../assets/treq-schedule.css">
-        <link rel="stylesheet" href="japan.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <!-- <script src="tmp.js"></script> -->
-    </head>
-    <body>
-        <div id="mobile-restrict-container">
-            <img id="status-bar" src="../assets/status-bar.png" alt="iPhone Status Bar with a Notch">
-            <div id="top-bar">
-                <div id="top-bar-left" class="top-bar-element">
-                    <img src="../assets/arrow.png">
-                </div> 
-                <div id="top-bar-mid" class="top-bar-element">
-                    Japan Trip!
-                </div> 
-                <div id="top-bar-right" class="top-bar-element">
-                    <img src="../assets/....png">
-                </div> 
+<head>
+    <title>Japan Trip Details</title>
+    <link rel="stylesheet" href="../assets/treq-mobile.css">
+    <link rel="stylesheet" href="../assets/treq-schedule.css">
+    <link rel="stylesheet" href="japan.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div id="mobile-restrict-container">
+        <img id="status-bar" src="../assets/status-bar.png" alt="iPhone Status Bar with a Notch">
+        <div id="top-bar">
+            <div id="top-bar-left" class="top-bar-element">
+                <!-- Back button link to user.html -->
+                <a href="user.html">
+                    <img src="../assets/arrow.png" alt="Back">
+                </a>
+            </div> 
+            <div id="top-bar-mid" class="top-bar-element">
+                Japan Trip!
+            </div> 
+            <div id="top-bar-right" class="top-bar-element">
+                <!-- Make sure to add the correct image source for your settings icon -->
+                <img class="header-icon" src="../assets/settings-icon.png" alt="Settings Icon">
+            </div> 
+        </div>
+        <div class="content">
+            <div id="cover">
+                <img class="trip-cover-image" src="../assets/japanfull.png" alt="Columbia Campus">
             </div>
-            <div class="content">
-                <div id="cover">
-                    <img class="trip-cover-image" src="../assets/japanfull.png" alt="Columbia Campus">
+            <div id="info-container" class="content-limit-center">
+                Japan Trip!
+                <div id="trip-range">
+                    Nov 11. 2021 - Nov 20. 2021
                 </div>
-                <div id="info-container" class="content-limit-center">
-                    Japan Trip!
-                    <div id="trip-range">
-                        Nov 11. 2021 - Nov 20. 2021
-                    </div>
-                    <div id="tripmates">
-                        <img id="invited-profile-icon" src="../assets/personA.png">
-                        <span id="invited-profile-list">
-                            Person A, and 3 others went.
-                        </span>
-                        <div></div>
-                    </div>
+                <div id="tripmates">
+                    <img id="invited-profile-icon" src="../assets/personA.png">
+                    <span id="invited-profile-list">
+                        Person A, and 3 others went.
+                    </span>
+                    <div></div>
                 </div>
-                <hr>
-                <div id="itinerary-container" class="content-limit-center">
-                    <span id="itinerary-title"> Itinerary </span>
-                    <div id="day-select">
-                        <select name="dates" id="dates" class="pill-dropdown">
-                            <option value="1">Day One: Nov 13, 2023</option>
-                            <option value="2">Day Two: Nov 14, 2023</option>
-                            <option value="3">Day Three: Nov 15, 2023</option>
-                        </select>
+            </div>
+            <hr>
+            <div id="itinerary-container" class="content-limit-center">
+                <span id="itinerary-title"> Itinerary </span>
+                <div id="day-select">
+                    <select name="dates" id="dates" class="pill-dropdown">
+                        <option value="1">Day One: Nov 13, 2023</option>
+                        <option value="2">Day Two: Nov 14, 2023</option>
+                        <option value="3">Day Three: Nov 15, 2023</option>
+                    </select>
+                </div>
+                <div id="schedule">
+                    <div class="active-event">
+                        <span class="event-time">10:00 AM</span>
+                        <span></span>
+                        <img class="event-image" src="../assets/meiji.png">
+                        <span class="event-name">Meiji Jingu Shrine</span>
+                        <span class="active-event-bottom-line"></span>
                     </div>
-                    <div id="schedule">
-                        <div class="active-event">
-                            <span class="event-time">10:00 AM</span>
-                            <span></span>
-                            <img class="event-image" src="../assets/meiji.png">
-                            <span class="event-name">Meiji Jingu Shring</span>
-                            <span class="active-event-bottom-line"></span>
-                        </div>
-                        <div class="active-event">
-                            <span class="event-time">11:00 AM</span>
-                            <span></span>
-                            <img class="event-image" src="../assets/kanmi.png">
-                            <span class="event-name">Kanmi Mitsuya</span>
-                            <span class="active-event-bottom-line"></span>
-                        </div>
-                        <div class="active-event">
-                            <span class="event-time">1:00 PM</span>
-                            <span></span>
-                            <img class="event-image" src="../assets/shibuya.png">
-                            <span class="event-name">Shibuya Crossing</span>
-                            <span class="active-event-bottom-line"></span>
-                        </div>
+                    <div class="active-event">
+                        <span class="event-time">11:00 AM</span>
+                        <span></span>
+                        <img class="event-image" src="../assets/kanmi.png">
+                        <span class="event-name">Kanmi Mitsuya</span>
+                        <span class="active-event-bottom-line"></span>
+                    </div>
+                    <div class="active-event">
+                        <span class="event-time">1:00 PM</span>
+                        <span></span>
+                        <img class="event-image" src="../assets/shibuya.png">
+                        <span class="event-name">Shibuya Crossing</span>
+                        <span class="active-event-bottom-line"></span>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
