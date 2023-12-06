@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log In</title>
+
+        <!-- css -->
+        <link rel="stylesheet" href="../static/css/treq-style.css">
+        <link rel="stylesheet" href="../static/css/treq-mobile.css">
+        <link rel="stylesheet" href="../static/css/authentication.css">
+        
+
+        <!-- font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <div id="mobile-restrict-container" class="content-center-limit">
+            <img id="status-bar" src="../static/images/status-bar.png" alt="iPhone Status Bar with a Notch">
+            <div id="top-bar">
+                <div id="top-bar-left" class="top-bar-element">
+                    <a href="javascript:history.back()">
+                        <img class="back-button" src="../static/images/left-arrow.png" alt="Back Arrow">
+                    </a>
+                </div>
+                <div id="top-bar-mid" class="top-bar-element">
+                    Log In
+                </div>
+            </div>
+
+            <div class="content center-control">
+                <div id="login-grid">
+                    <div class="login-grid-element">Good to see you back! 👋</div>
+
+                    <div class="login-grid-element">
+                        <input type="text" id="username" name="username" placeholder="Username">
+                        <input type="text" id="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="login-grid-element">
+                        <a href="home.html">
+                            <button id="login-button" class="pill-button">
+                                Log In
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

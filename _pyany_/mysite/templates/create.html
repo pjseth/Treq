@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Trip</title>
+        <!-- css -->
+        <link rel="stylesheet" href="../static/css/treq-style.css">
+        <link rel="stylesheet" href="../static/css/treq-mobile.css">
+        <link rel="stylesheet" href="../static/css/create.css">
+        
+
+        <!-- font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <div id="mobile-restrict-container">
+            <img id="status-bar" src="../static/images/status-bar.png" alt="iPhone Status Bar with a Notch">
+            <div id="top-bar">
+                <div id="top-bar-left" class="top-bar-element"></div> 
+                <div id="top-bar-mid" class="top-bar-element">
+                    Create Trip
+                </div> 
+                <div id="top-bar-right" class="top-bar-element">
+                    <!-- <button id="next-button" class="pill-button">
+                        Next
+                    </button> -->
+                </div> 
+            </div>
+            <div class="content center-control">
+                <div id="create-grid">
+                    <span class="title-grid-element">Trip Name:</span>
+                    <input type="text" id="new-trip-name" class="form-grid-element" name="trip-name" placeholder="Winter Break 2024">
+
+                    <span class="title-grid-element">Location:</span>
+                    <input type="text" id="new-trip-loc" class="form-grid-element" name="location" placeholder="Thailand">
+
+                    <span class="title-grid-element">Departure:</span>
+                    <input type="date" id="new-trip-dep" class="form-grid-element" name="dep">
+
+                    <span class="title-grid-element">Return:</span>
+                    <input type="date" id="new-trip-ret" class="form-grid-element" name="ret">
+
+                    <div id="invite-button-container">
+                        <a href="invite-friends.html">
+                            <button id="invite-button" class="pill-button">
+                                <img src="../static/images/button-icon-add-new-person.png" class="pill-button-icon">
+                                Invite friends
+                            </button>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-bar">
+                <a href="home.html">
+                    <img class="bottom-bar-icon" src="../static/images/icon-home.png" alt="grey vector of a house">
+                </a>
+                <a href="create.html">
+                    <img class="bottom-bar-icon" src="../static/images/icon-add-active.png" alt="blue vector of a plus">
+                </a>
+                <a href="user.html">
+                    <img class="bottom-bar-icon" src="../static/images/icon-profile.png" alt="grey vector of a person">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

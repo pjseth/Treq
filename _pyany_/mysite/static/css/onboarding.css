@@ -1,0 +1,25 @@
+/* override normal style */
+#mobile-restrict-container, #status-bar, #top-bar {
+	background-color: #1c5d99;
+	color: white;
+}
+
+.pill-button {
+    display: block;
+    padding: 10px 47px;
+    margin: 10px;
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+/* specific styles for each button */
+
+#login-button {
+    background-color: white;
+    color: #1c5d99;
+}
+
+#signup-button {
+    background-color: #1c5d99;
+    color: white;
+}

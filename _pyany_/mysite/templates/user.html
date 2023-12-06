@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Page</title>
+        <!-- css -->
+        <link rel="stylesheet" href="../static/css/treq-style.css">
+        <link rel="stylesheet" href="../static/css/treq-mobile.css">
+        <link rel="stylesheet" href="../static/css/user.css">
+        
+
+        <!-- font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <div id="mobile-restrict-container">
+            <img id="status-bar" src="../static/images/status-bar.png" alt="iPhone Status Bar with a Notch">
+            <div id="top-bar">
+                <div id="top-bar-left" class="top-bar-element">
+                    <img class="header-icon" src="../static/images/treq-logo.png" alt="Treq Logo">
+                </div> 
+                <div id="top-bar-mid" class="top-bar-element"></div> 
+                <div id="top-bar-right" class="top-bar-element">
+                    <img class="header-icon" src="../static/images/setting.png" alt="Notification Icon">
+                </div> 
+            </div>
+            <div class="content content-limit-center">
+                <div id="content-grid">
+                    <div id="user-info-container">
+                        <div id="user-profile-pic">
+                            <img class="profile" src="../static/images/profile.png"/>
+                        </div>
+                        <div id="name">
+                            Stephanie Soo
+                        </div>
+                        <div id="account">
+                            @stephaniesoo
+                        </div>
+                        <div id="trip-completed">
+                            Trips Completed: 2
+                        </div>
+                        <div id="friends">
+                            13 Friends
+                        </div>
+
+                    </div>
+                    <div id="search-container">
+                        Trips
+                        <div class="input-container">
+                            <input type="text" id="search-trip" name="search-trip" placeholder="Search trip name">
+                        </div>
+                    </div>
+                    <div id="trips-container">
+                        <div class="trip-type-header">Current trip</div>
+                        <div>
+                            <a href="home.html">
+                                <div class="trip-container">
+                                    <div class="trip-cover-image-wrapper">
+                                        <img class="trip-cover-image" src="../static/images/columbia.png"/>
+                                    </div>
+                                    <div class="trip-name">
+                                        <span>A trip to Columbia University</span>
+                                    </div>
+                                    <div class="trip-dates">
+                                        Nov 13. 2023 - Present
+                                    </div>
+                                    <div class="trip-members">
+                                        <img src="../static/images/personA.png">
+                                        <span>
+                                            Person A, and 3 others are going.
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="trip-type-header">Past trips</div>
+                        <div>
+                            <!-- <a href="trip-korea.html"> -->
+                            <a href="inprogress.html">
+                                <div class="trip-container">
+                                    <div class="trip-cover-image-wrapper">
+                                        <img class="trip-cover-image" src="../static/images/korea.png"/>
+                                    </div>
+                                    <div class="trip-name">
+                                        <span>Korea Grad Trip 😁</span>
+                                    </div>
+                                    <div class="trip-dates">
+                                        Dec 05. 2021 - Jan 10. 2022
+                                    </div>
+                                    <div class="trip-members">
+                                        <img src="../static/images/personA.png">
+                                        <span>
+                                            Person A, and 3 are went.
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <!-- <a href="trip-japan.html"> -->
+                            <a href="inprogress.html">
+                                <div class="trip-container">
+                                    <div class="trip-cover-image-wrapper">
+                                        <img class="trip-cover-image" src="../static/images/japan.png"/>
+                                    </div>
+                                    <div class="trip-name">
+                                        <span>Japan Trip!</span>
+                                    </div>
+                                    <div class="trip-dates">
+                                        Nov 11. 2021 - Nov 20. 2021
+                                    </div>
+                                    <div class="trip-members">
+                                        <img src="../static/images/personA.png">
+                                        <span>
+                                            Person A, and 5 are went.
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <!-- <a href="trip-another-japan.html"> -->
+                            <a href="inprogress.html">
+                                <div class="trip-container">
+                                    <div class="trip-cover-image-wrapper">
+                                        <img class="trip-cover-image" src="../static/images/japan.png"/>
+                                    </div>
+                                    <div class="trip-name">
+                                        <span> Another Japan Trip!</span>
+                                    </div>
+                                    <div class="trip-dates">
+                                        Aug 11. 2021 - Sep 20. 2021
+                                    </div>
+                                    <div class="trip-members">
+                                        <img src="../static/images/personA.png">
+                                        <span>
+                                            Person A, and 5 are went.
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-bar">
+                <a href="home.html">
+                    <img class="bottom-bar-icon" src="../static/images/icon-home.png" alt="grey vector of a house">
+                </a>
+                <a href="create.html">
+                    <img class="bottom-bar-icon" src="../static/images/icon-add.png" alt="grey vector of a plus">
+                </a>
+                <a href="user.html">
+                    <img class="bottom-bar-icon" src="../static/images/icon-profile-active.png" alt="blue vector of a person">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

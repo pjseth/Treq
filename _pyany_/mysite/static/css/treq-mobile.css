@@ -1,0 +1,78 @@
+#mobile-restrict-container {
+	width: calc(393px + var(scrollbar-width)); /* add scrollbar-gutter (original: 393px) */
+	height: 852px;
+	background-color: white;
+	overflow: auto;
+	position: relative;
+/*    scrollbar-gutter: stable;*/
+	padding-right: scrollbar-width;
+}
+
+#status-bar {
+	position: sticky;
+	top: 0px;
+	background-color: darkgrey;
+	text-align: center;
+	width: 393px;
+	height: 33px;
+}
+
+#top-bar {
+	background-color: white;
+	display: grid;
+	grid-template-columns: 30% 40% 30%;
+	height: 60px;
+	width: 85%;
+	margin: auto;
+	align-items: center;
+}
+
+.top-bar-element {
+	align-items: center;
+}
+
+#top-bar-left {
+	text-align: left;
+}
+
+#top-bar-mid {
+	text-align: center;
+	font-weight: bold;
+}
+
+#top-bar-right {
+	text-align: right;
+}
+.content {
+	min-height: 670px; /* roughly 852 - 33 - 60 - 82 - padding */
+}
+
+.center-control {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+  	justify-content: center; /* horizontally center the inner content */
+  	align-items: center; /* vertically center the inner content */
+}
+
+.content-limit-center {
+	width: calc(393px * 0.85);
+	margin: auto;
+}
+
+#bottom-bar {
+	background-color: white;
+	border-top: solid darkgrey 2px;
+	position: sticky;
+	bottom: 0px;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	flex: 3;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.bottom-bar-icon {
+	width: 30px;
+}

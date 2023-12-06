@@ -1,0 +1,27 @@
+input {
+    padding: 14px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+    font-size: 16px;
+}
+
+.login-grid-element {
+	padding: 10px 0px;
+}
+
+#login-grid {
+	margin: auto;
+	width: calc(393px * 0.80);
+	display: grid;
+	grid-template-rows: repeat(4, auto);
+	grid-auto-rows: auto;
+	text-align: center;
+}
+
+#login-button {
+    padding: 10px 47px;
+    background-color: #1c5d99;
+    font-size: 1em;
+}

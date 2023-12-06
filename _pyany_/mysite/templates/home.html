@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+
+        <!-- css -->
+        <link rel="stylesheet" href="../static/css/treq-style.css">
+        <link rel="stylesheet" href="../static/css/treq-mobile.css">
+        <link rel="stylesheet" href="../static/css/treq-schedule.css">
+        <link rel="stylesheet" href="../static/css/home.css">
+        
+
+        <!-- font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <div id="mobile-restrict-container">
+            <img id="status-bar" src="../static/images/status-bar.png" alt="iPhone Status Bar with a Notch">
+            <div id="top-bar">
+                <div id="top-bar-left" class="top-bar-element">
+                    <img class="header-icon" src="../static/images/treq-logo.png" alt="Treq Logo">
+                </div> 
+                <div id="top-bar-mid" class="top-bar-element"></div> 
+                <div id="top-bar-right" class="top-bar-element">
+                    <img class="header-icon" src="../static/images/notification-bell.png" alt="Notification Icon">
+                </div> 
+            </div>
+            <div class="content">
+                <div id="cover">
+                    <img class="trip-cover-image" src="../static/images/trip1-cover.png" alt="Columbia Campus">
+                </div>
+                <div id="trip-info">
+                    <div id="subtitle" class="content-limit-center">
+                        Current Trip!
+                    </div>
+                    <div id="title" class="content-limit-center">
+                        A trip to Columbia University
+                    </div>
+                    <div id="tripmates" class="content-limit-center">
+                        <img id="invited-profile-icon" src="../static/images/personA.png">
+                        <span id="invited-profile-list">
+                            Person A, and 3 others are invited
+                        </span>
+                        <div id="add-person">
+                            <img id="add-person-icon" src="../static/images/add-person.png">
+                        </div>
+                    </div>
+                    <div id="day-select" class="content-limit-center">
+                        <select name="dates" id="dates" class="pill-dropdown">
+                            <option value="1">Day One: Nov 13, 2023</option>
+                            <option value="2">Day Two: Nov 14, 2023</option>
+                            <option value="3">Day Three: Nov 15, 2023</option>
+                        </select>
+                    </div>
+                    <div id="actions" class="content-limit-center">
+                        <button class="homepage-cta pill-button">
+                            <img src="../static/images/button-icon-rank-places.png" class="pill-button-icon">
+                            Rank places
+                        </button>
+                        <button class="homepage-cta pill-button">
+                            <img src="../static/images/button-icon-add-new-places.png" class="pill-button-icon">
+                            Add new places
+                        </button>
+                    </div>
+                </div>
+                <div id="schedule" class="content-limit-center">
+                    <div class="inactive-event">
+                        <span class="event-time">10:00 AM</span>
+                        <span class="event-name">Milstein Library</span>
+                    </div>
+                    <div class="active-event">
+                        <span class="event-time">11:00 AM</span>
+                        <span>----------------------</span>
+                        <img class="event-image" src="../static/images/book-culture.png">
+                        <span class="event-name">Book Culture</span>
+                        <span class="active-event-bottom-line">----------------------------------</span>
+                    </div>
+                    <div class="inactive-event">
+                        <span class="event-time">12:00 PM</span>
+                        <span class="event-name">Pisticci</span>
+                    </div>
+                    <div class="inactive-event">
+                        <span class="event-time">4:00 PM</span>
+                        <span class="event-name">Butler Library</span>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-bar">
+                <a href="home.html">
+                    <img class="bottom-bar-icon" src="../static/images/icon-home-active.png" alt="blue vector of a house">
+                </a>
+                <a href="create.html">
+                    <img class="bottom-bar-icon" src="../static/images/icon-add.png" alt="grey vector of a plus">
+                </a>
+                <a href="user.html">
+                    <img class="bottom-bar-icon" src="../static/images/icon-profile.png" alt="grey vector of a person">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
