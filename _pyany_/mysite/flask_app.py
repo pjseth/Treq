@@ -45,5 +45,13 @@ def signup():
 def user():
    return render_template('user.html')
 
+@app.route('/rank.html')
+def rank():
+   return render_template('rank.html')
+
+@app.route('/newplace.html')
+def newPlace():
+   return render_template('newplace.html')
+
 if __name__ == '__main__':
    app.run(debug=True)
