@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rank</title>
+        <!-- css -->
+        <link rel="stylesheet" href="../static/css/treq-style.css">
+        <link rel="stylesheet" href="../static/css/treq-mobile.css">
+        <link rel="stylesheet" href="../static/css/rank.css">
+        
+
+        <!-- font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <div id="mobile-restrict-container">
+            <img id="status-bar" src="../static/images/status-bar.png" alt="iPhone Status Bar with a Notch">
+            <div id="top-bar">
+                <div id="top-bar-left" class="top-bar-element">
+                    <a href="javascript:history.back()">
+                        <img class="back-button" src="../static/images/left-arrow.png" alt="Back Arrow">
+                    </a>
+                </div> 
+                <div id="top-bar-mid" class="top-bar-element">
+                    Rank places
+                </div> 
+            </div>
+            <div class="content content-limit-center">
+                <div class="ranking-container">
+                    <div class="rank-item">
+                        <span>Jin Ramen</span>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">6</option>
+                        </select>
+
+                    </div>
+                
+                    <div class="rank-item">
+                        <span>Hungarian Pastry Shop</span>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">6</option>
+                        </select>
+                    </div>
+
+                    <div class="rank-item">
+                        <span>Mama's TOO!</span>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">6</option>
+                        </select>
+                    </div>
+
+                    <div class="rank-item">
+                        <span>Happy Hot Hunan</span>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">6</option>
+                        </select>
+                    </div>
+
+                    <div class="rank-item">
+                        <span>Chipotle</span>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">6</option>
+                        </select>
+                    </div>
+
+                    <div class="rank-item">
+                        <span>Book Culture</span>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="5">6</option>
+                        </select>
+                    </div>
+                
+                    <!-- Add more items as needed -->
+                    <hr>
+                    <a href="home.html">
+                        <button onclick="submitRankings()">Submit Rankings</button>
+                    </a>
+                </div>
+                <script>
+                    function submitRankings() {
+                        // Collect ranking data
+                        const rankingData = [];
+                        const rankItems = document.querySelectorAll('.rank-item');
+
+                        rankItems.forEach(item => {
+                            const itemName = item.querySelector('span').innerText;
+                            const itemRank = item.querySelector('select').value;
+
+                            rankingData.push({
+                                name: itemName,
+                                rank: itemRank
+                            });
+                        });
+
+                        // Read existing data from the JSON file (assuming the file is named rankings.json)
+                        fetch('rankings.json')
+                        .then(response => response.json())
+                        .then(existingData => {
+                            // Combine existing data with new ranking data
+                            const updatedData = existingData.concat(rankingData);
+
+                            // Write updated data back to the JSON file
+                            const blob = new Blob([JSON.stringify(updatedData)], { type: 'application/json' });
+                            const a = document.createElement('a');
+                            a.href = URL.createObjectURL(blob);
+                            a.download = 'rankings.json';
+                            document.body.appendChild(a);
+                            a.click();
+                            document.body.removeChild(a);
+
+                            alert('Rankings submitted!');
+                            history.back();
+                        })
+                        .catch(error => {
+                            console.error('Error reading or writing JSON file:', error);
+                            alert('Error submitting rankings. Please try again.');
+                        });
+                    }
+                </script>
+
+            </div>
+        </div>
+    </body>
+</html>
