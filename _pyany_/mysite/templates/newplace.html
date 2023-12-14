@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Place</title>
+        <!-- css -->
+        <link rel="stylesheet" href="../static/css/treq-style.css">
+        <link rel="stylesheet" href="../static/css/treq-mobile.css">
+        <link rel="stylesheet" href="../static/css/newplace.css">
+        
+
+        <!-- font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <div id="mobile-restrict-container">
+            <img id="status-bar" src="../static/images/status-bar.png" alt="iPhone Status Bar with a Notch">
+            <div id="top-bar">
+                <div id="top-bar-left" class="top-bar-element"></div> 
+                <div id="top-bar-mid" class="top-bar-element">
+                    Add Place
+                </div> 
+                <div id="top-bar-right" class="top-bar-element">
+                    <!-- <button id="next-button" class="pill-button">
+                        Next
+                    </button> -->
+                </div> 
+            </div>
+            <div class="content center-control">
+                <div id="create-grid">
+                    <span class="title-grid-element">Place:</span>
+                        <input type="text" id="new-trip-name" class="form-grid-element" name="trip-name" placeholder="Columbia University">
+        
+                        <span class="title-grid-element">Location:</span>
+                        <input type="text" id="new-trip-loc" class="form-grid-element" name="location" placeholder="16th and Broadway, NY 10027">
+        
+                        <span class="title-grid-element">Time:</span>
+                        <input type="time" id="new-trip-dep" class="form-grid-element" name="dep">
+        
+                        <span class="title-grid-element">Photo:</span>
+                        <input type="file" id="new-trip-photo" class="form-grid-element" name="photo" accept="image/*">
+
+                    <div id="invite-button-container">
+                        <a href="home.html">
+                            <button id="invite-button" class="pill-button">
+                                Submit
+                            </button>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-bar">
+                <a href="home.html">
+                    <img class="bottom-bar-icon" src="../static/images/icon-home.png" alt="grey vector of a house">
+                </a>
+                <a href="create.html">
+                    <img class="bottom-bar-icon" src="../static/images/icon-add-active.png" alt="blue vector of a plus">
+                </a>
+                <a href="user.html">
+                    <img class="bottom-bar-icon" src="../static/images/icon-profile.png" alt="grey vector of a person">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
