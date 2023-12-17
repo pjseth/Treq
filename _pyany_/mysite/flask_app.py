@@ -53,5 +53,10 @@ def rank():
 def newPlace():
    return render_template('newplace.html')
 
+@app.route('/japan.html')
+def newPlace():
+   return render_template('japan.html')
+
+
 if __name__ == '__main__':
    app.run(debug=True)
