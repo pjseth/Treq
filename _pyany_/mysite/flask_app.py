@@ -54,7 +54,7 @@ def newPlace():
    return render_template('newplace.html')
 
 @app.route('/japan.html')
-def newPlace():
+def japan():
    return render_template('japan.html')
 
 

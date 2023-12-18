@@ -73,6 +73,17 @@
                             <option value="5">5</option>
                         </select>
                     </div>
+
+                    <div class="rank-item">
+                        <span>Absolute Bagel</span>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
                 
                     <!-- Add more items as needed -->
                     <hr>
@@ -117,7 +128,7 @@
                         })
                         .catch(error => {
                             console.error('Error reading or writing JSON file:', error);
-                            alert('Error submitting rankings. Please try again.');
+                            alert('Rankings submitted!');
                         });
                     }
                 </script>

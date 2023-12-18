@@ -1,3 +1,167 @@
+html, body {
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+}
+
+button, input, select {
+/*	font-size: inherit;*/
+  font-family: inherit;
+}
+
+.pill-button {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: auto;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #639FAB;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.pill-button-icon {
+	height: 16px;
+	margin-right: 5px;
+}
+
+.pill-dropdown {
+	display: inline-block;
+  padding: 5px 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+/*  text-align: center;*/
+	width: 100%;
+}
+
+#mobile-restrict-container {
+	width: 393px;
+	height: 852px;
+	background-color: white;
+	overflow: auto;
+	position: relative;
+}
+
+#status-bar {
+	position: sticky;
+	top: 0px;
+	background-color: darkgrey;
+	text-align: center;
+	width: 393px;
+	height: 33px;
+}
+
+#top-bar {
+	background-color: white;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	text-align: center;
+	align-items: center;
+	height: 60px;
+}
+
+.top-bar-element {
+	align-items: center;
+}
+
+.content {
+	min-height: 670px; /* roughly 852 - 33 - 60 - 82 - padding */
+}
+
+.center-control {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+  justify-content: center; /* horizontally center the inner content */
+  align-items: center; /* vertically center the inner content */
+}
+
+.content-limit-center {
+	width: 85%;
+	margin: auto;
+}
+
+#bottom-bar {
+	background-color: white;
+	border-top: solid darkgrey 2px;
+	position: sticky;
+	bottom: 0px;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	flex: 3;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.bottom-bar-icon {
+	width: 30px;
+}
+
+/* another section*/
+
+#tripmates {
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	gap: 10px;
+	align-items: center;
+}
+
+#invited-profile-icon {
+	height: 31px;
+}
+
+#invited-profile-list {
+	font-size: 15px;
+}
+
+#schedule {
+	display: grid;
+	grid-template-rows: auto;
+}
+
+.inactive-event {
+	color: grey;
+	display: grid;
+	grid-template-columns: 70px auto;
+	align-items: center;
+	margin: 5px 0px;
+}
+
+.event-time {
+	font-size: 14px;
+}
+
+.event-name {
+	font-size: 16px;
+}
+
+.active-event {
+	display: grid;
+	grid-template-columns: 100px auto;
+	grid-template-rows: auto;
+	gap: 5px;
+	font-weight: bold;
+	align-items: center;
+	margin: 10px 0px;
+}
+
+.active-event-bottom-line {
+	grid-column: 1 / 3;
+}
+
+.event-image {
+	width: 80px;
+}
+
 .header-icon {
 	height: 22px;
 }
